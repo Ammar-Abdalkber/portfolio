@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ammar Abdelkabir - Projects Archive | Data Analytics, BI and Machine Learning">
+    <title>Ammar Abdelkabir | Projects Archive</title>
+
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ammar Abdelkabir — Projects Archive">
+    <meta property="og:description" content="Data warehousing, BI dashboards, machine learning and web development projects.">
+    <meta property="og:image" content="https://Ammar-Abdalkber.github.io/assets/img/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://Ammar-Abdalkber.github.io/projects.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://Ammar-Abdalkber.github.io/assets/img/og-image.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-page="projects">
+    <canvas id="bg-canvas"></canvas>
+    <div class="grid-overlay"></div>
+
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">AMMAR<span class="logo-accent">.ABDELKABIR</span></a>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="index.html#about" class="nav-link">ABOUT</a>
+                <a href="index.html#skills" class="nav-link">SKILLS</a>
+                <a href="projects.html" class="nav-link active">PROJECTS</a>
+                <a href="index.html#experience" class="nav-link">EXPERIENCE</a>
+                <a href="index.html#certificates" class="nav-link">CERTIFICATES</a>
+                <a href="index.html#contact" class="nav-link">CONTACT</a>
+            </div>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="section-meta"><span>PROJECT ARCHIVE</span><div class="line-neon"></div></div>
+        <h1 class="page-title">Project Archive</h1>
+        <p>Data warehousing, BI dashboards, machine learning and web development projects.</p>
+    </div>
+
+    <div class="controls-bar">
+        <div class="filter-group" id="filterGroup">
+            <button class="filter-btn active" data-filter="all">ALL PROJECTS</button>
+            <button class="filter-btn" data-filter="bi">DATA &amp; BI</button>
+            <button class="filter-btn" data-filter="ml">MACHINE LEARNING</button>
+        </div>
+        <div class="search-box">
+            <span class="search-icon">⌕</span>
+            <input type="text" id="searchInput" placeholder="SEARCH PROJECTS...">
+        </div>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid"></div>
+
+    <footer>
+        <div class="footer-content">
+            <span>Ammar Abdelkabir Abdelqader — Just Watch me when I do IT...</span>
+            <span>Cairo <span id="local-clock" class="mono-clock">--:--:--</span></span>
+        </div>
+        <div class="footer-nav"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="index.html#contact">Contact</a></div>
+    </footer>
+
+    <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content glass" style="max-width:700px;max-height:85vh;overflow-y:auto;text-align:left;">
+            <span class="modal-close" id="modalClose" aria-label="Close">&times;</span>
+            <div id="modalMedia" class="modal-media"></div>
+            <span id="modalCategory" class="modal-category"></span>
+            <h2 id="modalTitle" class="modal-title"></h2>
+            <p id="modalDesc" class="modal-desc"></p>
+            <div id="modalDetails" class="modal-details"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/three-bg.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
